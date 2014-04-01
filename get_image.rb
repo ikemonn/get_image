@@ -1,7 +1,3 @@
-##################################
-######使い方######################
-# ruby get_images.ruby 検索ワード
-##################################
 require "open-uri"
 require "FileUtils"
 require "cgi"
