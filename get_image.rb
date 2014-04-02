@@ -24,7 +24,6 @@ start = 0
 
 # APIの仕様で1度に8ページ×8URLしか画像を表示できないらしい
 while start <= 64 
-  p start
   url = "http://ajax.googleapis.com/ajax/services/search/images?q=#{search_word}&v=1.0&hl=ja&rsz=large&start=#{start}&safe=off"
   page = open(url)
   page.each_line do |line|
